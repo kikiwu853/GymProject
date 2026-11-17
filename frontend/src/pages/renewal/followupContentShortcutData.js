@@ -7,6 +7,8 @@ export const FOLLOWUP_CONTENT_SHORTCUTS = [
 ];
 
 function stripBackendWhitespace(value) {
+  // Match Java whitespace rules, including tabs and separator control characters.
+  // eslint-disable-next-line no-control-regex
   return value.replace(/^[\u0009-\u000D\u001C-\u001F\u0020\u1680\u2000-\u2006\u2008-\u200A\u2028\u2029\u205F\u3000]+|[\u0009-\u000D\u001C-\u001F\u0020\u1680\u2000-\u2006\u2008-\u200A\u2028\u2029\u205F\u3000]+$/gu, "");
 }
 

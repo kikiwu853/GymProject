@@ -53,3 +53,16 @@ target/
 /src/main/resources/application-local.properties
 .idea/
 *.iml
+
+# Local IDE / secrets / generated uploads (tracked team IDE files remain in history)
+.factorypath
+.settings/org.eclipse.jdt.apt.core.prefs
+.settings/org.springframework.ide.eclipse.prefs
+*.launch
+.env
+.env.*
+!.env.example
+*.bak
+*.mdf
+*.ldf
+/src/main/resources/static/upload/
